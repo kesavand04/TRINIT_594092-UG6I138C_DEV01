@@ -1,0 +1,143 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" >
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <link href="{% static 'Registration.css' %}" rel="stylesheet">
+    </head>
+    <body>
+        <div class="register">
+            <div class="row">   
+                <div class="col-md-3 register-left">
+                    <h3>Welcome TO ESTIM CARE</h3>
+                    <p>Little Drops Makes A Mighty Ocean!</p>
+                    <button type="button" onclick="loginNgo()" class="btn btn-light rounded-pill">Login as Philanthropist</button>
+                    <br><br>
+                    <button type="button" onclick="loginUser()" class="btn btn-light rounded-pill">Login as an Ngo</button>
+                </div>
+                <div class="col-md-9 register-right">
+                    <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">USER</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">NGO</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <h3 class="register-heading">PHILANTHROPIST REGISTATION</h3>
+                            <div class="row register-form">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="userName" placeholder="Name" value="" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" id='userPass' placeholder="Password" value="" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id='userEmail' placeholder="Email" value="" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id='userPhone' minlength="10" maxlength="10" placeholder="Phone Number" value="" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <h4>Interested Sector</h4>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="check1" name="option1" value="Children">
+                                            <label class="form-check-label" for="check1">Children</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="check2" name="option1" value="Civil Society Development" >
+                                            <label class="form-check-label" for="check2">Civil Society Development</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="check3" name="option1" value="Community Development" >
+                                            <label class="form-check-label" for="check3">Community Development</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="check4" name="option1" value="Economic Development" >
+                                            <label class="form-check-label" for="check4">Economic Development</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="check5" name="option1" value="Education" >
+                                            <label class="form-check-label" for="check5">Education</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="check6" name="option1" value="Women Development" >
+                                            <label class="form-check-label" for="check6">Women Development</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="check7" name="option1" value="Old Age Care" >
+                                            <label class="form-check-label" for="check7">Old Age Care</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="check8" name="option1" value="Human Service" >
+                                            <label class="form-check-label" for="check8">Human Service</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="check9" name="option1" value="Poverty Alleviation" >
+                                            <label class="form-check-label" for="check9">Poverty Alleviation</label>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-primary" onclick="registerUser()">Register</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <h3  class="register-heading">NGO REGISTRATION</h3>
+                            <div class="row register-form">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="ngoName" placeholder="NGO Name*" value="" />
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control" id="ngoInterest">
+                                            <option class="hidden"  selected disabled>NGO Sector</option>
+                                            <option value="Children">Children</option>
+                                            <option value="Civil Society Development">Civil Society Development</option>
+                                            <option value="Community Development">Community Development</option>
+                                            <option value="Economic Development">Economic Development</option>
+                                            <option value="Education">Education</option>
+                                            <option value="Women Development">Women Development</option>
+                                            <option value="Old Age Care">Old Age Care</option>
+                                            <option value="Human Service">Human Service</option>
+                                           <option value="Poverty Care">Poverty Care</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" id="ngoPass" class="form-control" placeholder="NGO password" value="" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="ngoLoc" placeholder="NGO Location" value="" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" maxlength="10" id="ngoPhone" minlength="10" class="form-control" placeholder="Contact Number" value="" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="work">Previous Work:</label>
+                                        <textarea class="form-control" rows="5" id="work"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="fund">Goal:</label>
+                                        <textarea class="form-control" rows="5" id="fund"></textarea>
+                                    </div>
+                                    <button type="button" class="btn btn-primary" onclick="registerNgo()">Register</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="{% static 'Registration.js' %}"></script>
+    </body>
+</html>

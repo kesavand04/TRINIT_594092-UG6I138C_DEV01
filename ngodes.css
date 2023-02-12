@@ -1,0 +1,255 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin-left: 100px;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(ngo.jfif);
+    background-position: center;
+    background-size: cover;
+    
+}
+h2{
+    padding-bottom: 100px;
+}
+.logo{
+    width: 150px;
+    margin-top: 18px;
+    
+}
+.header{
+    height: 10%;
+    
+}
+.header-btn{
+    text-decoration: none;
+    border-radius:30px;
+    padding: 7px 20px;
+    float: right;
+    margin-top: 15px;
+    color:#fff;
+    background-color: darkblue;
+    font-weight: 600;
+}
+.ngo-details{
+    margin: 3% 0;
+    
+}
+.left-box{
+    color:white;
+    text-align: left;
+    padding-left: 4cm;
+    
+}
+body {
+     margin: 0px; 
+    text-align: center;
+    font-family: fantasy;
+    color: #66BFBF;
+}
+h1{
+    margin-top: 0px;
+    
+    letter-spacing: 1px;
+    font-size: 100px;
+    font-family: 'Sacramento', cursive;
+    
+}
+p{
+    line-height: 30px;
+}
+hr{
+    border: dotted;
+    color: antiquewhite;
+    height: 0px;
+    width:5%;
+    border-bottom: none;
+    margin:100px auto;
+}
+a{
+    color: azure;
+    margin: 20px;
+    text-decoration: none;
+}
+a:hover{
+    color: aqua;
+}
+.para{
+     letter-spacing: 1px;
+    font-size: 3rem;
+}
+
+.topc{
+   
+     position: relative;
+  
+    
+   
+   
+    
+    
+}
+.profile{
+    display: inline;
+    
+}
+.topc{
+    background-color: aqua;
+}
+
+.toppic{
+    padding-top: 50px;
+    position: absolute;
+    right:300px;
+}
+.middlec{
+    position: absolute;
+    left:300px;
+    margin-bottom: 0;
+}
+.bottomc{
+    margin-top: 0px;
+   
+}
+.pro{
+    text-decoration: underline;
+    text-decoration-color: mediumvioletred;
+}
+.skill-row{
+    line-height: 30px;
+   
+   text-align: left;
+    width: 50%;
+    margin: 10px auto 100px auto;
+    
+}
+.cric{
+    width: 25%;
+    margin-right: 20px;
+    float: right;
+    
+}
+.foot{
+    
+    margin-right: 20px;
+    width:25%;
+    float: left;
+}
+.shara{
+    padding-top: 50px;
+}
+
+.intro{
+    width: 30%;
+        margin: 30px auto 30px auto;
+}
+.contact-me{
+    width: 40%;
+        margin:40px auto ;
+}
+.btn {
+  background: #ed0c44;
+  background-image: -webkit-linear-gradient(top, #ed0c44, #b82c2c);
+  background-image: -moz-linear-gradient(top, #ed0c44, #b82c2c);
+  background-image: -ms-linear-gradient(top, #ed0c44, #b82c2c);
+  background-image: -o-linear-gradient(top, #ed0c44, #b82c2c);
+  background-image: linear-gradient(to bottom, #ed0c44, #b82c2c);
+  -webkit-border-radius: 60;
+  -moz-border-radius: 60;
+  border-radius: 60px;
+  font-family: Georgia;
+  color: white;
+  font-size: 21px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #6da0c2;
+  background-image: -webkit-linear-gradient(top, #6da0c2, #db33db);
+  background-image: -moz-linear-gradient(top, #6da0c2, #db33db);
+  background-image: -ms-linear-gradient(top, #6da0c2, #db33db);
+  background-image: -o-linear-gradient(top, #6da0c2, #db33db);
+  background-image: linear-gradient(to bottom, #6da0c2, #db33db);
+  text-decoration: none;
+}
+.bottom-container{
+    background-color: darkblue;
+    padding: 50px 0 50px 0;
+}
+
+
+/* {box-sizing: border-box;} */
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
